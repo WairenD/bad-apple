@@ -1,5 +1,64 @@
-.container{
-  width:100%;
-  height:100%;
+.container {
+  width: 100%;
+  height: 100%;
   background-color: white;
+  .button {
+    background-color: #0095ff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 0.2rem;
+    color: #fff;
+    cursor: pointer;
+    width: 33%;
+    &:hover {
+      background-color: #65bfff;
+    }
+  }
+  .btnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    button {
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  table {
+    width: 50%;
+    margin: auto;
+    padding-top: 5rem;
+    td,
+    th {
+      width: 33%;
+      text-align: center;
+    }
+    thead {
+      tr {
+        border: 2px solid;
+      }
+    }
+    tr:nth-of-type(even) {
+      background-color: lightgray;
+    }
+    tbody {
+      tr:hover {
+        background-color: gray;
+        color: white;
+        transition: 0.1s;
+      }
+    }
+    tr {
+      width: 100%;
+      border: 1px solid;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem;
+      margin-bottom: 5px;
+      height: 4rem;
+    }
+  }
 }
